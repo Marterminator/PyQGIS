@@ -1,7 +1,3 @@
-# FIND OUTLIERS OF POINT DATA
-# Different data sources (e.g. drilling, maps ...) can cause inconsistencies in elevetation data.
-# Note, that the layer has to be in active view.
-
 # Input paramters:
 #   field_name: Field name containing elevation data.
 #   tolerance: Tolerance for finding outliers, multiplicator of standard deviation.
