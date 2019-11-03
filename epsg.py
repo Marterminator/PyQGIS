@@ -23,5 +23,12 @@ gPnt = QgsGeometry.fromPoint(QgsPoint((xmin+xmax)/2,(ymin+ymax)/2))
 features = utm.getFeatures()
 for f in features:
   geom = f.geometry()
-  print geom.contains(gPnt)
-  print f['zone']
+  # Find zone containing point.
+  if geom.contains(gPnt):
+      zone = f['zone']
+if zone == 31:
+    print('Your suggested CRS is EPSG 25831')
+elif zone == 32:
+    print('Your suggested CRS is EPSG 25832')
+elif zone == 33:
+    print('Your suggested CRS is EPSG 25833')
